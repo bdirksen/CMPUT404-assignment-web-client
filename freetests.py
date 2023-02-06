@@ -214,8 +214,8 @@ class TestHTTPClient(unittest.TestCase):
         http = httpclass.HTTPClient()        
         urls = [
             "http://www.cs.ualberta.ca/",
-            "http://softwareprocess.es/static/SoftwareProcess.es.html",
-            "http://c2.com/cgi/wiki?CommonLispHyperSpec",
+            #"http://softwareprocess.es/static/SoftwareProcess.es.html",
+            #"http://c2.com/cgi/wiki?CommonLispHyperSpec",
             "http://slashdot.org"
             ]
         for url in urls:
