@@ -93,6 +93,7 @@ class HTTPClient(object):
         self.sendall(request)
         response = self.recvall(self.socket)
         self.close()
+        print(response)
         return HTTPResponse(self.get_code(response), self.get_body(response))
 
 
@@ -125,6 +126,9 @@ class HTTPClient(object):
         self.sendall(request)
         response = self.recvall(self.socket)
         self.close()
+        # print response to stdout
+        print(response)
+
         return HTTPResponse(self.get_code(response), self.get_body(response))
     
 
